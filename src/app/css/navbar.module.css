@@ -1,0 +1,377 @@
+.navbar{
+    z-index: 100;
+    position: fixed;
+    height:100vh;
+    width:21.35vw;
+    background: #020617;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease-in-out;
+
+
+    .profile_picture{
+        margin: 3vh 0 2vh 0;
+        border-radius: 1.5625vw;
+        background: #1E293B;
+        width: 5.208333333333333vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile_picture img{
+        border-radius: 1.5625vw;
+        width:5.208333333333333vw;
+    }
+
+    .name{
+        font-family: Poppins, sans-serif;
+        color: #FFF;
+        font-size: 1.9791666666666667vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 2vh;
+        text-align: center;
+    }
+
+    .cv_icon{
+        cursor: pointer;
+        margin-bottom: 3vh;
+    }
+
+    .cv_icon img{
+        width: 3.125vw;
+    }
+
+    .cv_icon img:hover{
+        transform: scale(1.1);
+        filter: brightness(0.8);
+    }
+
+    .navbutton{
+        border-radius: 1.3020833333333333vw;
+        background: #1E293B;
+        width: 16.15vw;
+        height: 7.77vh;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap:1vw;
+        margin-bottom: 1vh;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .navbutton:hover{
+        filter: brightness(0.75);
+        cursor:pointer;
+    }
+
+    .navbutton img {
+        margin-left:1.5vw;
+        width:  2.0833333333333335vw;
+    }
+
+    .navbutton p{
+        color: #FFF;
+        font-family: Poppins, sans-serif;
+        font-size: 1.3541666666666667vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin:0;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .switch_icon{
+        margin-top: 8vh;
+        transform: rotate(0);
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .switch_icon img{
+        width:5.208333333333333vw;
+    }
+
+    .switch_icon:hover{
+        filter: brightness(0.75);
+        cursor:pointer;
+    }
+}
+
+.navbarReduced{
+    z-index: 100;
+    position: fixed;
+    height:100vh;
+    width:10.416666666666666vw;
+    background: #020617;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease-in-out;
+
+
+    .profile_picture{
+        margin: 3vh 0 2vh 0;
+        border-radius: 1.5625vw;
+        background: #1E293B;
+        width: 5.208333333333333vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile_picture img{
+        border-radius: 1.5625vw;
+        width:5.208333333333333vw;
+    }
+
+    .name{
+        font-family: Poppins, sans-serif;
+        color: #FFF;
+        font-size: 1.9791666666666667vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 2vh;
+        text-align: center;
+    }
+
+    .cv_icon{
+        cursor: pointer;
+        margin-bottom: 3vh;
+    }
+
+    .cv_icon img{
+        width: 3.125vw;
+    }
+
+    .cv_icon img:hover{
+        transform: scale(1.1);
+        filter: brightness(0.8);
+    }
+
+    .navbutton{
+        border-radius: 1.3020833333333333vw;
+        background: #1E293B;
+        width: 4.166666666666667vw;
+        height: 7.77vh;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1vh;
+        justify-content: center;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .navbutton:hover{
+        filter: brightness(0.75);
+        cursor:pointer;
+    }
+
+    .navbutton img{
+        width:2.0833333333333335vw;
+    }
+
+    .navbutton p{
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        display: none;
+    }
+
+    .switch_icon{
+        margin-top: 8vh;
+        transform: rotate(180deg);
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .switch_icon img{
+        width:5.208333333333333vw;
+    }
+
+    .switch_icon:hover{
+        filter: brightness(0.75);
+        cursor:pointer;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar{
+        z-index: 100;
+        position: fixed;
+        height:100vh;
+        width:calc(21.35vw *2);
+        background: #020617;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: width 0.3s ease-in-out;
+
+
+        .profile_picture{
+            margin: 3vh 0 2vh 0;
+            border-radius: calc(2*1.5625vw*2);
+            background: #1E293B;
+            width: calc(5.208333333333333vw*2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile_picture img{
+            border-radius: calc(2*1.5625vw*2);
+            width: calc(5.208333333333333vw*2);
+        }
+
+        .name{
+            font-family: Poppins, sans-serif;
+            color: #FFF;
+            font-size: calc(1.9791666666666667vw*2);
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 2vh;
+            text-align: center;
+        }
+
+        .cv_icon{
+            cursor: pointer;
+            margin-bottom: 3vh;
+        }
+
+        .cv_icon img{
+            width: calc(4*3.125vw);
+        }
+
+        .cv_icon img:hover{
+            transform: scale(1.1);
+            filter: brightness(0.8);
+        }
+
+        .navbutton{
+            border-radius: calc(1.3020833333333333vw*2);
+            background: #1E293B;
+            width: calc(16.15vw *2);
+            height: 7.77vh;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            gap:calc(1vw*2);
+            margin-bottom: 1vh;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .navbutton:hover{
+            filter: brightness(0.75);
+            cursor:pointer;
+        }
+
+        .navbutton img {
+            margin-left:calc(1.5vw*2);
+            width:calc(3*2.0833333333333335vw);
+        }
+
+        .navbutton p{
+            color: #FFF;
+            font-family: Poppins, sans-serif;
+            font-size: calc(1.3541666666666667vw*2);
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin:0;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .switch_icon{
+            margin-top: 8vh;
+            transform: rotate(0);
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .switch_icon img{
+            width:calc(5.208333333333333vw*3);
+        }
+
+        .switch_icon:hover{
+            filter: brightness(0.75);
+            cursor:pointer;
+        }
+    }
+
+    .navbarReduced{
+        z-index: 100;
+        position: fixed;
+        height:100vh;
+        width:21.35vw;
+        background: #020617;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: width 0.3s ease-in-out;
+
+        .profile_picture{
+            margin: 3vh 0 2vh 0;
+            border-radius: calc(2*1.5625vw*2);
+            background: #1E293B;
+            width: calc(5.208333333333333vw*2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile_picture img{
+            border-radius: calc(2*1.5625vw*2);
+            width: calc(5.208333333333333vw*2);
+        }
+
+        .cv_icon img{
+            width: calc(3*3.125vw);
+        }
+
+        .navbutton{
+            border-radius: 1.3020833333333333vw;
+            background: #1E293B;
+            width: 10vw;
+            height: 7.77vh;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1vh;
+            justify-content: center;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .navbutton:hover{
+            filter: brightness(0.75);
+            cursor:pointer;
+        }
+
+        .navbutton img{
+            width:calc(2*2.0833333333333335vw);
+        }
+
+        .navbutton p{
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            display: none;
+        }
+
+        .switch_icon{
+            margin-top: 8vh;
+            transform: rotate(180deg);
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .switch_icon img{
+            width:calc(5.208333333333333vw*2);
+        }
+
+        .switch_icon:hover{
+            filter: brightness(0.75);
+            cursor:pointer;
+        }
+    }
+}
