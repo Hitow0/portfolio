@@ -31,6 +31,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size:1.25vw;
+    cursor:pointer;
 }
 
 .buttoncategory button img{
