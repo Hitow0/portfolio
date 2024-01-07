@@ -86,4 +86,41 @@
         font-size: 1.6666666666666667vw;
         width:30vw;
     }
+
+    .email img{
+        width:2.6041666666666665vw;
+    }
+
+    .cv img{
+        width:2.6041666666666665vw;
+    }
+
+    .phone img{
+        width:2.6041666666666665vw;
+    }
+
+    .mobilite img{
+        width:2.6041666666666665vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .contactcontainer{
+        .email img{
+            width:calc(2.6041666666666665vw*2);
+        }
+
+        .cv img{
+            width:calc(2.6041666666666665vw*2);
+        }
+
+        .phone img{
+            width:calc(2.6041666666666665vw*2);
+        }
+
+        .mobilite img{
+            width:calc(2.6041666666666665vw*2);
+        }
+    }
 }
