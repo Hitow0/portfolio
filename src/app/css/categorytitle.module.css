@@ -1,0 +1,36 @@
+.categorytitle {
+    margin-top: 2vh;
+    margin-left: 24vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2.1052631578947367vw;
+    margin-bottom: 1.6842105263157894vw;
+    width: fit-content;
+    font-style: normal;
+
+    .categorycontainer {
+        position: relative;
+    }
+
+    .title{
+        display: flex;
+        margin-left: 0.8421052631578947vw;
+    }
+
+    .bar{
+        background-color: #1875FF;
+        height: 1.256544502617801vh;
+        border-radius: 1.256544502617801vh;
+        padding-left: 0.8421052631578947vw;
+        padding-right: 0.8421052631578947vw;
+    }
+
+    .subcategory{
+        display: flex;
+
+        .sep{
+            margin-left:0.42105263157894735vw;
+            width:2.736842105263158vw;
+        }
+    }
+}
