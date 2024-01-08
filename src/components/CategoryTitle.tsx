@@ -23,7 +23,7 @@ const CategoryTitle: React.FC<CategoryTitleProps> = ({ categoryTitle, subCategor
                 <div className={styles.title}><p ref={categoryTitleRef}>{categoryTitle}</p>
                     {subCategoryTitle && (
                         <div className={styles.subcategory}>
-                            <img src="/assets/right-2-svgrepo-com.svg" alt=">" className={styles.sep}/>
+                            <img src="./assets/right-2-svgrepo-com.svg" alt=">" className={styles.sep}/>
                             <p>
                                 {subCategoryTitle}
                             </p>
