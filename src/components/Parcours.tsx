@@ -5,7 +5,7 @@ import CategoryTitle from "@/components/CategoryTitle";
 
 const Parcours = () => {
     return (
-        <div>
+        <div id={'parcours'}>
             <CategoryTitle categoryTitle={"Parcours"}/>
             <div className={styles.timeline}>
                 <Timeline/>
