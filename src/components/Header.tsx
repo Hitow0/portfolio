@@ -23,7 +23,7 @@ const Header = () => {
     };
 
     const handleDownloadCV = () => {
-        window.open('/CV.pdf', '_blank');
+        window.open('./CV.pdf', '_blank');
     };
 
     const handleToggleNav = () => {

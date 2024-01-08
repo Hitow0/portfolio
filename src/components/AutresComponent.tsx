@@ -19,7 +19,7 @@ const AutresComponent = () => {
             <div className={styles.softskills}>
                 {qualities.map((quality, index) => (
                     <div key={index} className={styles.qualityContainer}>
-                        <img src={'/assets/competences/star.svg'} alt={'>'}/>
+                        <img src={'./assets/competences/star.svg'} alt={'>'}/>
                         <p>{quality}</p>
                     </div>
                 ))}
