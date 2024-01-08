@@ -2,7 +2,7 @@
 
 const portfolioData = {
     title: "Portfolio",
-    image: "/assets/projects/portfolio.png",
+    image: "./assets/projects/portfolio.png",
     langage: 'TypeScript/NextJS',
     finished: true,
     teamSize: 1,
@@ -12,7 +12,7 @@ const portfolioData = {
 
 const readnLiveData = {
     title: "Read'nLive",
-    image: "/assets/projects/Read'nLive.png",
+    image: "./assets/projects/Read'nLive.png",
     langage: 'PHP/Laravel',
     finished: false,
     teamSize: 8,
@@ -25,7 +25,7 @@ const readnLiveData = {
 
 const flatcraftData = {
     title: "Flatcraft",
-    image: "/assets/projects/Flatcraft.png",
+    image: "./assets/projects/Flatcraft.png",
     langage: 'Java',
     finished: true,
     teamSize: 4,
@@ -37,7 +37,7 @@ const flatcraftData = {
 
 const raytracerData = {
     title: "RayTracer",
-    image: "/assets/projects/Raytracer.png",
+    image: "./assets/projects/Raytracer.png",
     langage: 'Java',
     finished: false,
     teamSize: 4,
