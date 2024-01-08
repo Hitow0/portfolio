@@ -1,12 +1,17 @@
-// next.config.js
-module.exports = {
-    // Autres configurations...
-    generateStaticParams: async () => {
-        // Retournez les paramètres statiques souhaités sous forme d'objet.
-        return {
-            '/': { page: '/' },
-            // Ajoutez d'autres routes si nécessaire
-            // ...
-        };
-    },
-};
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+    output: 'export',
+
+    // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
+    // trailingSlash: true,
+
+    // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
+    // skipTrailingSlashRedirect: true,
+
+    // Optional: Change the output directory `out` -> `dist`
+    // distDir: 'dist',
+}
+
+module.exports = nextConfig
