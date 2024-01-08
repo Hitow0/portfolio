@@ -11,3 +11,40 @@ a{
 p{
   margin:0;
 }
+
+footer {
+  margin-left: 21.35vw;
+  padding: 1.25vw;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6666666666666667vw;
+  font-style: italic;
+
+}
+
+footer div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:  0.4166666666666667vw;
+}
+
+footer div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:  0.4166666666666667vw;
+}
+
+.social button {
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding:  0.4166666666666667vw;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}

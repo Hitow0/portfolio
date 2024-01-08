@@ -1,0 +1,79 @@
+/* Ajoutez ces styles dans votre fichier CSS ou SCSS */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal {
+    background: #fff;
+    width: 70vw;
+    max-width: 600px; /* Ajustez la largeur maximale selon vos besoins */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.modal img {
+    width: 100%;
+    max-height: 300px; /* Ajustez la hauteur maximale selon vos besoins */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.modal h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    margin-bottom: 15px;
+}
+
+.modal a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+
+.modal a:hover {
+    background-color: #0056b3;
+}
+
+.modal button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal button:hover {
+    background-color: #c0392b;
+}
+
+.scrollableDescription {
+    max-height: 200px;
+    overflow-y: auto;
+    white-space: pre-line;
+}
