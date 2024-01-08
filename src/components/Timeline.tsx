@@ -13,7 +13,7 @@ const Timeline = () => {
                     <em>IUT de Lens</em>
                 </p>
                 <p>
-                    Développement d'applications, conduites de projets et travaux en équipe, gestions de données.
+                    Développement d&apos;applications, conduites de projets et travaux en équipe, gestions de données.
                 </p>
 
             </div>
