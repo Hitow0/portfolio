@@ -7,7 +7,7 @@ interface CompetenceBoxProps {
 }
 
 const CompetenceBoxComponent: React.FC<CompetenceBoxProps> = ({ imageName, title }) => {
-    const urlSRC = '/assets/competences/' + imageName + '.svg'
+    const urlSRC = './assets/competences/' + imageName + '.svg'
 
     return (
         <div className={styles.competencebox}>

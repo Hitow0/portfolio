@@ -16,8 +16,8 @@ const Footer: React.FC = () => {
                 <p>Copyright © Nicolas Blart</p>
             </div>
             <div className={'social'}>
-                <button onClick={redirectToGithub}><img style={{width:'3vw'}} src={'/assets/social/github.svg'} alt={'GitHub'}/> </button>
-                <button onClick={redirectToGitlab}><img style={{width:'3vw'}} src={'/assets/social/gitlab.svg'} alt={'GitLab'}/></button>
+                <button onClick={redirectToGithub}><img style={{width:'3vw'}} src={'./assets/social/github.svg'} alt={'GitHub'}/> </button>
+                <button onClick={redirectToGitlab}><img style={{width:'3vw'}} src={'./assets/social/gitlab.svg'} alt={'GitLab'}/></button>
             </div>
         </footer>
     );

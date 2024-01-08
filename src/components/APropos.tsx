@@ -22,7 +22,7 @@ const APropos = () => {
         <div id={"apropos"}>
             <CategoryTitle categoryTitle={"A propos"}></CategoryTitle>
             <div className={styles.informationcontainer}>
-                <img className={styles.image} src="/assets/navbar/photo.png" alt="Nicolas BLART"/>
+                <img className={styles.image} src="./assets/navbar/photo.png" alt="Nicolas BLART"/>
                 <p className={styles.paragraph}>
                     Je suis un étudiant en Informatique, je suis actuellement en seconde année d’un BUT Informatique à Lens.
                     <br/><br/>
@@ -31,7 +31,7 @@ const APropos = () => {
             </div>
             <div className={styles.contactcontainer}>
                 <div className={styles.email}>
-                    <img src={'/assets/apropos/email icon.svg'} alt={"email"}/>
+                    <img src={'./assets/apropos/email icon.svg'} alt={"email"}/>
                     <p>
                         <a className={styles.attributemail} href={"mailto:blrt.nicolas@gmail.com"}>
                             blrt.nicolas@gmail.com
@@ -39,15 +39,15 @@ const APropos = () => {
                     </p>
             </div>
             <div className={styles.cv}>
-                    <img src={'/assets/apropos/cv icon.svg'} alt={"cv"}/>
+                    <img src={'./assets/apropos/cv icon.svg'} alt={"cv"}/>
                     <p style={{cursor: "pointer" }} onClick={handleImageClick}>Télécharger le CV</p>
                 </div>
                 <div className={styles.phone}>
-                    <img src={'/assets/apropos/phone icon.svg'} alt={"phone number"}/>
+                    <img src={'./assets/apropos/phone icon.svg'} alt={"phone number"}/>
                     <p>+33 7 81 66 13 08</p>
                 </div>
                 <div className={styles.mobilite}>
-                    <img src={'/assets/apropos/mobilité icon.svg'} alt={"mobilité"}/>
+                    <img src={'./assets/apropos/mobilité icon.svg'} alt={"mobilité"}/>
                     <p>Mobilité : Zone Béthune - Bruay Lille (en train)</p>
                 </div>
             </div>

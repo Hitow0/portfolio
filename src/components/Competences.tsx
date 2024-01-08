@@ -40,17 +40,17 @@ const Competences = () => {
                 <div className={styles.buttoncategory}>
                     <button onClick={() => handleCategoryClick('Code')}
                             className={selectedCategory === 'Code' ? styles.selectedButton : ''}>
-                        <img src={'/assets/competences/button icon/code icon.svg'} alt={"code"}/>
+                        <img src={'./assets/competences/button icon/code icon.svg'} alt={"code"}/>
                         Code
                     </button>
                     <button onClick={() => handleCategoryClick('Logiciels')}
                             className={selectedCategory === 'Logiciels' ? styles.selectedButton : ''}>
-                        <img src={'/assets/competences/button icon/layer icon.svg'} alt={"logiciels"}/>
+                        <img src={'./assets/competences/button icon/layer icon.svg'} alt={"logiciels"}/>
                         Logiciels
                     </button>
                     <button onClick={() => handleCategoryClick('Autres')}
                             className={selectedCategory === 'Autres' ? styles.selectedButton : ''}>
-                    <img src={'/assets/competences/button icon/gear icon.svg'} alt={"autre"}/>
+                    <img src={'./assets/competences/button icon/gear icon.svg'} alt={"autre"}/>
                         Autres
                     </button>
                 </div>

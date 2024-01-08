@@ -8,8 +8,8 @@ interface CompetenceBox2Props {
 }
 
 const CompetenceBoxComponentWith2Images: React.FC<CompetenceBox2Props> = ({ imageName1, imageName2, title }) => {
-    const url1SRC = '/assets/competences/' + imageName1 + '.svg'
-    const url2SRC = '/assets/competences/' + imageName2 + '.svg'
+    const url1SRC = './assets/competences/' + imageName1 + '.svg'
+    const url2SRC = './assets/competences/' + imageName2 + '.svg'
 
     return (
         <div className={styles.competenceboxwith2images}>

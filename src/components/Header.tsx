@@ -152,13 +152,13 @@ const Header = () => {
     return (
         <div className={`${isNavReduced ? styles.navbarReduced : styles.navbar}`}>
             <div className={styles.profile_picture}>
-                <img src="/assets/navbar/photo.png" alt="Nicolas BLART"/>
+                <img src="./assets/navbar/photo.png" alt="Nicolas BLART"/>
             </div>
             <div className={styles.name}>
                 Nicolas BLART
             </div>
             <div className={styles.cv_icon}>
-                <img src={"/assets/navbar/CV.svg"} alt={"CV icon"} onClick={handleImageClick}/>
+                <img src={"./assets/navbar/CV.svg"} alt={"CV icon"} onClick={handleImageClick}/>
             </div>
 
             <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
@@ -167,30 +167,30 @@ const Header = () => {
             </Modal>
 
             <div id={"accueil-link"} className={styles.navbutton}>
-                <img src={"/assets/navbar/accueil.svg"} alt={"Accueil"}/>
+                <img src={"./assets/navbar/accueil.svg"} alt={"Accueil"}/>
                 <p>Accueil</p>
             </div>
 
             <div id={"apropos-link"} className={styles.navbutton}>
-                <img src={"/assets/navbar/apropos.svg"} alt={"A propos"}/>
+                <img src={"./assets/navbar/apropos.svg"} alt={"A propos"}/>
                 <p>A propos</p>
             </div>
 
             <div id={"competences-link"} className={styles.navbutton}>
-                <img src={"/assets/navbar/competences.svg"} alt={"Compétences"}/>
+                <img src={"./assets/navbar/competences.svg"} alt={"Compétences"}/>
                 <p>Compétences</p>
             </div>
             <div id={"parcours-link"} className={styles.navbutton}>
-                <img src={"/assets/navbar/parcours.svg"} alt={"Parcours"}/>
+                <img src={"./assets/navbar/parcours.svg"} alt={"Parcours"}/>
                 <p>Parcours</p>
             </div>
             <div id={"projets-link"} className={styles.navbutton}>
-                <img src={"/assets/navbar/project.svg"} alt={"Projets"}/>
+                <img src={"./assets/navbar/project.svg"} alt={"Projets"}/>
                 <p>Projets</p>
             </div>
 
             <div className={styles.switch_icon} onClick={handleToggleNav}>
-                <img src={"/assets/navbar/switch.svg"} alt={"Switch icon"}/>
+                <img src={"./assets/navbar/switch.svg"} alt={"Switch icon"}/>
             </div>
         </div>
     );
