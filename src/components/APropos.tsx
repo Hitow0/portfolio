@@ -15,7 +15,7 @@ const APropos = () => {
     };
 
     const handleDownloadCV = () => {
-        window.open('/CV.pdf', '_blank');
+        window.open('./CV.pdf', '_blank');
     };
 
     return (
