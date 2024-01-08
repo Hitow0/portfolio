@@ -5,7 +5,7 @@ export default function MainPage() {
         <main className={styles.main} id={'accueil'}>
             <div className={styles.accueil}>
                 <h1>Nicolas BLART</h1>
-                <p>Etudiant en Informatique</p>
+                <p>Étudiant en Informatique</p>
             </div>
         </main>
     )
