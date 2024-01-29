@@ -17,11 +17,13 @@
     background: #fff;
     width: 70vw;
     max-width: 600px; /* Ajustez la largeur maximale selon vos besoins */
+    max-height: 80vh;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: relative;
+    overflow-y: auto;
 }
 
 .modal img {
