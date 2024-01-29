@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { portfolioData, readnLiveData, flatcraftData, raytracerData } from './projectData';
 import ProjectModal from "@/components/ProjectModal";
 import styles from '../app/css/project.module.css'
+import { projects } from "@/components/projectData"
+
 
 interface Project {
     title: string;
@@ -15,18 +16,12 @@ interface Project {
 
 interface PortfolioItemProps {
     projectKey: string;
+    index: number;
 }
 
-const projectDataMap: { [key: string]: Project } = {
-    portfolio: portfolioData,
-    readnLive: readnLiveData,
-    flatcraft: flatcraftData,
-    raytracer: raytracerData,
-};
-
-const PortfolioItem: React.FC<PortfolioItemProps> = ({ projectKey }) => {
+const PortfolioItem: React.FC<PortfolioItemProps> = ({ projectKey, index }) => {
     const [isModalOpen, setModalOpen] = useState(false);
-    const project = projectDataMap[projectKey];
+    const project = projects[index];
 
     const openModal = () => {
         setModalOpen(true);
@@ -36,11 +31,11 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ projectKey }) => {
         setModalOpen(false);
     };
 
-    const className = project.title
+    const classNames = `${styles.projectItem} ${styles[project.title]} ${index % 2 === 1 ? styles.projectItemWithMarginTop : ''}`;
 
     return (
         <>
-            <div className={styles[project.title]} onClick={openModal}>
+            <div className={classNames} onClick={openModal}>
                 <img src={project.image} alt={project.title} />
                 <span>{project.title}</span>
             </div>

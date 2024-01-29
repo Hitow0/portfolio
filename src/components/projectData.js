@@ -14,7 +14,7 @@ const readnLiveData = {
     title: "Read'nLive",
     image: "./assets/projects/Read'nLive.png",
     langage: 'PHP/Laravel',
-    finished: false,
+    finished: true,
     teamSize: 8,
     description: "Read'nLive est un projet conçu lors du marathon du web, en collaboration avec le département MMI (Métiers du Multimédia et de l'Internet), dans un délai imparti de 36 heures. Ce site web permet la lecture, l'édition et la création d'histoires à choix.\n" +
         "\n" +
@@ -39,12 +39,30 @@ const raytracerData = {
     title: "RayTracer",
     image: "./assets/projects/Raytracer.png",
     langage: 'Java',
-    finished: false,
+    finished: true,
     teamSize: 4,
     description: "Le but de ce projet était de créer une librairie capable de lire un fichier de configuration et de générer une image. L'élaboration de cette image implique des calculs complexes de lumière, se concentrant spécifiquement sur l'application des principes du raytracing. Cette technique de rendu simule le trajet des rayons de lumière à travers une scène virtuelle, permettant d'obtenir des images réalistes en reproduisant fidèlement les effets de lumière et d'ombre." +
      "\n\n" +
     "Au cours de ce projet, j'ai assumé la responsabilité de plusieurs aspects du développement, notamment la mise en œuvre de certains calculs de lumière (notamment l'illumination de Phong) et la gestion de la lecture du fichier de configuration. De plus, j'ai effectué de nombreuses sessions de débogage pour garantir le bon fonctionnement de la librairie.",
     githubLink: "https://github.com/Hitow0/raytracer",
 };
+const webpokeData = {
+    title: "WebPoke",
+    image: "./assets/projects/Webpoke.png",
+    langage: 'Python / Flask',
+    finished: true,
+    teamSize: 4,
+    description: "Ce projet avait pour objectif d'apprendre à utiliser les API avec le framework Flask. Le principe est de faire des recherches sur des pokemons et d'afficher les informations. \n \n Nous avons pris soin à rajouter des détails supplémentaires pour faciliter la compréhension utilisateur et de rajouter un jeu nommé 'Quel est ce Pokemon?' afin de donner un jeu ayant un rapport avec le Pokedex : capturer tous les pokemons.",
+    githubLink: "https://github.com/Hitow0/webpoke",
+};
 
-export { portfolioData, readnLiveData, flatcraftData, raytracerData };
+
+const projects = [
+    { projectKey: "webpoke", ...webpokeData },
+    { projectKey: "portfolio", ...portfolioData },
+    { projectKey: "readnLive", ...readnLiveData },
+    { projectKey: "flatcraft", ...flatcraftData },
+    { projectKey: "raytracer", ...raytracerData },
+];
+
+export { projects };

@@ -1,11 +1,11 @@
 'use client'
 import React, {useState} from 'react';
-import CategoryTitle from "@/components/CategoryTitle";
 import styles from '../app/css/project.module.css'
+import CategoryTitle from "@/components/CategoryTitle";
 import PortfolioItem from "@/components/PortfolioItem";
+import { projects } from "@/components/projectData"
 
 const ProjectComponent = () => {
-
     const [isModalOpen, setModalOpen] = useState(false);
 
     const openModal = () => {
@@ -20,10 +20,13 @@ const ProjectComponent = () => {
         <div id={'projets'}>
             <CategoryTitle categoryTitle={'Projets'}/>
             <div className={styles.projectgrid}>
-                <PortfolioItem projectKey="portfolio" />
-                <PortfolioItem projectKey="readnLive" />
-                <PortfolioItem projectKey="flatcraft" />
-                <PortfolioItem projectKey="raytracer" />
+                {projects.map((project, index) => (
+                    <PortfolioItem
+                        key={project.projectKey}
+                        projectKey={project.projectKey}
+                        index={index}
+                    />
+                ))}
             </div>
         </div>
     );
