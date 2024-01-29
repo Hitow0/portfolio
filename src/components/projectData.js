@@ -48,7 +48,7 @@ const raytracerData = {
 };
 const webpokeData = {
     title: "WebPoke",
-    image: "./assets/projects/Webpoke.png",
+    image: "./assets/projects/WebPoke.png",
     langage: 'Python / Flask',
     finished: true,
     teamSize: 4,
